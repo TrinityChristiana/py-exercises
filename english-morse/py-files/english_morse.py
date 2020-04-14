@@ -3,3 +3,5 @@
 Author: Trinity Terry
 pyrun: python english_morse.py
 """
+
+print(__name__)
