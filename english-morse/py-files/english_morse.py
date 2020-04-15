@@ -35,7 +35,7 @@ def morse_code(string):
             new_morse.append(key_list[i])
         string_word.append("".join(new_morse))
 
-    if type(string) == str:
+    if type(string) == str and has_letters:
         for i in range(len(string)):
             ch = string[i].lower() 
             if ch.isalpha() or ch in available_char or ch.isdigit():
@@ -77,6 +77,6 @@ def morse_code(string):
 
         return " ".join(morse_word) if has_letters else string_word
     else:
-        raise TypeError(f"morse_code only accepts a string as a argument")
+        raise TypeError(f"morse_code only accepts a string that contains letters as a argument")
 
-print(morse_code("... --- ..."))
+print(morse_code("SOS"))
