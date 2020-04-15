@@ -60,9 +60,6 @@ def recursion_sum(num_list, sum = 0, i = 0):
             # In recursive funtions you must return function call!!!
             return recursion_sum(num_list, sum, i)
             
-        
-
-
 print(for_sum([3, 6, 9, 1]))
 print(while_sum([3, 6, 9, 1]))
 print(recursion_sum([3, 6, 9, 1]))
